@@ -118,5 +118,6 @@ span {
 	max-height: min-content;
 	padding: 15px;
 	/* применяется редко для доп обводок внутри бокса */
+	
 	box-sizing: content-box;
 }
