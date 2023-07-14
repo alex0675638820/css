@@ -9,33 +9,52 @@
 		</div>
 	</nav>
 </header>
-{{#with hero}}
-	<div class="hero">
-	<div class="hero_content">
-				<h1 class="hero_title">{{title}}</h1>
-			<p class="hero_text">{{text}}</p>
+<main class="main">
+	{{#with messages}}
+ 		<div class="messages">
+			<h1 class="messages_title">{{title}}</h1>
+			{{#each list}}
+				<div class="msg">
+					<strong class="msg_name">{{name}}</strong>
+					<p class="msg_text">{{message}}</p>
+					<span class="msg_day">{{day}}</span>
+				</div>
+			{{/each}}
+			<a href="#" class="messages_link">All messages</a>
 		</div>
-		<img src="{{photo}}" alt="Hero image" class="hero_image">
-	</div>
-{{/with}}
-<main class="blog">
-	{{#each blog}}
-		{{> cardBlog data=this}}
-	{{/each}}
-</main>
-{{#with form}}
-	<div class="form">
-		<div class="form_content">
-			<h3 class="form_title">{{title}}</h3>
-			<p class="form_info">{{info}}</p>
-		</div>
-		<div class="form_action">
-			<a href="{{href}}" class="button form_button">{{button}}</a>
-		</div>
-	</div>
-{{/with}}
+	{{/with}}
+ 
+	{{#with form}}
+		<form class="form">
+			<h1 class="form_title">{{title}}</h1>
+			<div class="form_input_list">
+				{{#each inputs}}
+					<input type="{{type}}" placeholder="{{placeholder}}"  class="form_input" name="{{name}}" 
+						id="form_input_{{id}}"/>
+				{{/each}} 
+			</div>
+			
+			<div class="form_checkbox">
+				<input type="checkbox" name="{{checkbox.name}}" id="{{checkbox.name}}">
+				<div></div>
+				<label for="{{checkbox.name}}">{{checkbox.label}}</label>
+			</div>
 
-<footer class="footer">
+			<button type="submit" class="form_button">{{button}}</button>
+			<p class="form_info">{{info}}</p>
+		</form>
+	{{/with}}
+	
+</main>
+<div class="advantages">
+	{{#each advantages}}
+		<div>
+			<strong>{{title}}</strong>
+			<p>{{text}}</p>
+		</div>
+	{{/each}}
+</div>
+<footer class="footer" id="test">
 	<div>
 		{{> logo}}
 		<span class="footer_copyright">Copyright 2023-2024</span>
