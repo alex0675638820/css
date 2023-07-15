@@ -39,19 +39,20 @@
 /*=============================================================== */
 
 .header {
+	background-color: #253041;
 	padding: var(--spase-l) 0;
 	border-bottom: 1px solid var(--color-border);
 	display: flex;
 	justify-content: space-between;
 }
  .logo {
-	font-size: 17px;
+	font-size: var(--size-d);
 	color: var(---color-white);
 	background: var(--color-primary);
 
-	width: 24px;
-	height: 24px;
-	border-radius:  calc(var(--border-radius) / 2);
+	width: 56px;
+	height: 30px;
+	border-radius:  var(--border-radius);
 	display: flex;
 	justify-content: center;
 	align-items: center;

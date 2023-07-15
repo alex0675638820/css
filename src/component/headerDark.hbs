@@ -1,0 +1,15 @@
+<div>
+	{{#with header}}
+		<div class="logo">A	
+		</div>
+		<nav class="header">
+			<div class="header_nav">
+				<div class="nav">
+					{{#each links}}
+						<a href="{{uri}}" class="nav_link">{{text}}</a>
+					{{/each}}
+				</div>
+			</div>
+		</nav>
+	{{/with}}
+</div>

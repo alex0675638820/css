@@ -1,0 +1,10 @@
+{{#each footer}}
+	<div>
+		<span class="footer_title">{{title}}</span>
+		<div class="nav {{#if isVertical}}nav_vertical{{else}}nav_inline{{/if}}">
+			{{#each list}}
+				<a href="{{uri}}" class="nav_link">{{text}}</a>
+			{{/each}}
+		</div>
+	</div>
+{{/each}}
