@@ -484,6 +484,27 @@ router.get('/template-3', function (req, res) {
         button: "View details",
         href: "https://example.com/",
         img: "https://picsum.photos/140/140"
+      },
+	  {
+        title: "Latest post",
+        text: "This is a wider card with supporting text below as a natural lead-in to additional content",
+        button: "View details",
+        href: "https://example.com/",
+        img: "https://picsum.photos/140/140"
+      },
+      {
+        title: "Featured story",
+        text: "This is a wider card with supporting text below as a natural lead-in to additional content",
+        button: "View details",
+        href: "https://example.com/",
+        img: "https://picsum.photos/140/140"
+      },
+      {
+        title: "Popular post",
+        text: "This is a wider card with supporting text below as a natural lead-in to additional content",
+        button: "View details",
+        href: "https://example.com/",
+        img: "https://picsum.photos/140/140"
       }
     ],
 
@@ -887,7 +908,7 @@ router.get('/template-7', function (req, res) {
   
 	//            ↙ cюди вводимо назву файлу з сontainer
 	res.render('template-7', {
-		layout: template-7,
+		layout: 'template-7',
 	  page: {
 		title: "Example Page"
 	  },
