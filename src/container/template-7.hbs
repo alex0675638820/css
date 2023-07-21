@@ -6,7 +6,7 @@
 				<h1 class="hero_title">{{title}}</h1>
 				<p class="hero_text">{{description}}</p>
 				{{#with button}}
-					<a href="{{url}}" class="button hero_button">{{text}}</a>
+					<a href="{{url}}" class="hero_button">{{text}}</a>
 				{{/with}}
 			</div> 
 		{{/with}}
@@ -20,17 +20,20 @@
 		{{/with}}
 		<div class="card">
 			<h2 class="title">Our Articles</h2> 
-			<a href="#" class="card_item button">View All</a>
+			<input type="text" class="card_item" placeholder="View All">
 		</div>	
-		{{#each articles}}
-			<div class="frame_content">
-				<div class="frame_slider">
-					<img src="{{photo}}" alt="frame image" class="frame_image">
-					<h1 class="frame_title">{{name}}</h1>
-					<p class="frame_info">{{description}}</p>
+		<div class="frame">
+			{{#each articles}}
+				<div class="frame_content">
+					<div class="frame_slider">
+						<img src="{{photo}}" alt="frame_image" class="frame_image">
+						<h1 class="frame_title">{{name}}</h1>
+						<p class="frame_info">{{description}}</p>
+					</div>
+					<a href="#" class="frame_button">Read All</a>
 				</div>
-			</div>
-		{{/each}}
+			{{/each}}
+		</div>
 		{{> footerDark}}
 	</div>
 </div>

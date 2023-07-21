@@ -9,10 +9,12 @@
 		</div>
 	</div>
 	<div class="header_item">
-		<span class="logo1">Ad</span>
-		{{#with ad}}
-			<a href="{{uri}}" class="nav_link">{{text}}</a>
-		{{/with}}	
+		<div class="header_item_logo"> 
+			<span class="logo1">Ad</span>
+			{{#with ad}}
+				<a href="{{uri}}" class="nav_link">{{text}}</a>
+			{{/with}}
+		</div>	
 		<a class="user">userOnline: {{userOnline}}</a>
 	</div>
 </div>
