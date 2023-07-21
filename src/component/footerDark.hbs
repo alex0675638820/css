@@ -1,10 +1,10 @@
-{{#each footer}}
-	<div>
-		<span class="footer_title">{{title}}</span>
-		<div class="nav {{#if isVertical}}nav_vertical{{else}}nav_inline{{/if}}">
-			{{#each list}}
-				<a href="{{uri}}" class="nav_link">{{text}}</a>
-			{{/each}}
+{{#with footer}}
+	<div class="footer">
+		<div>
+		{{#each pages}}
+			<a href="{{path}}" class="footer_link">{{name}}</a>
+		{{/each}}
 		</div>
+		<span class="footer_copyright">{{copyright}}</span>
 	</div>
-{{/each}}
+{{/with}}
