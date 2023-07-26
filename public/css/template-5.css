@@ -329,7 +329,7 @@
 .messages {
 	/* grid-area: messages; */
 	grid-column: 1 / 3;
-	grid-row: 1 / 3;
+	grid-row: 1 / 3; 
 }
 .form {
 	/* grid-area: form; */
