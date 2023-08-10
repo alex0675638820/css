@@ -186,7 +186,10 @@
 	.header_icon-click {
 		height: 32px;
 		width: 32px;
-		position: absolute;
+		max-height: 32px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		padding: 20px;
 		top: calc(50% - (32px / 2));
 		right: var(--spacing-1);
@@ -257,7 +260,7 @@
 	}
 	.frame_select {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat (2, 1fr);
 		grid-template-rows: 1fr 1fr;
 		gap: var(--spacing-5);
 	}
